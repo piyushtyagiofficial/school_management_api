@@ -12,7 +12,6 @@ const connection = mysql.createConnection({
   ssl: {
     // Ensure the path exists and the certificate is in PEM format
     rejectUnauthorized: false,
-    ca: fs.readFileSync(process.env.DB_CA_CERTS)
   }
 });
 
